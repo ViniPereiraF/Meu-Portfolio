@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Vinícius Pereira — Gestor de Tráfego Pago (Google Ads & Meta), desenvolvedor de sites e sistemas. Transformo cliques em resultados reais." />
+  <title>Vinícius Pereira — Tráfego Pago, Sites & Automação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,800&display=swap" rel="stylesheet" />
+
+  <style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}:root{--bg:#020202;--fg:#f6f6fd;--accent:#696aac;--primary:#3e3f7e;--secondary:#a2a3e9;--tertiary:#c7c8f2;--light-accent:#e3e3f8;--card-border:rgba(255,255,255,.12);--card-bg:#0d0d1a;--max-w:1500px;--radius-lg:24px;--radius-pill:999px;--transition:.3s cubic-bezier(.4,0,.2,1)}html{scroll-behavior:smooth;font-size:16px}body{background:var(--bg);color:var(--fg);font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}a{text-decoration:none;color:inherit}img{display:block;max-width:100%}ul{list-style:none}button{cursor:pointer;border:none;background:none;color:inherit;font-family:inherit}.scroll-progress{position:fixed;top:0;left:0;height:2px;width:0%;background:linear-gradient(90deg,var(--accent),var(--secondary));z-index:9999;transition:width .1s linear}.loader{position:fixed;inset:0;background:var(--bg);z-index:10000;display:flex;align-items:center;justify-content:center;transition:opacity .6s ease,visibility .6s ease}.loader.hidden{opacity:0;visibility:hidden;pointer-events:none}.loader__inner{text-align:center}.loader__logo{font-size:clamp(1.5rem,4vw,2.5rem);font-weight:800;letter-spacing:.15em;color:var(--fg);margin-bottom:2rem;opacity:0;animation:loaderFadeIn .6s .2s forwards}.loader__bar{width:200px;height:2px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden;margin:0 auto}.loader__fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--secondary));border-radius:2px;animation:loaderBar 1.4s cubic-bezier(.4,0,.2,1) .4s forwards;width:0}@keyframes loaderFadeIn{to{opacity:1}}@keyframes loaderBar{to{width:100%}}.nav{position:fixed;top:0;left:0;width:100%;padding:20px 0;z-index:50;transition:background var(--transition),backdrop-filter var(--transition)}.nav.scrolled{background:rgba(2,2,2,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.06)}.nav__inner{max-width:var(--max-w);margin:0 auto;padding:0 2rem;display:flex;align-items:center;gap:2rem}.nav__logo{flex-shrink:0}.nav__logo-text{font-size:1.1rem;font-weight:800;letter-spacing:.04em;color:var(--fg)}.nav__logo-text span{color:var(--secondary);font-style:italic}.nav__links{flex:1}.nav__list{display:flex;align-items:center;justify-content:center;gap:.25rem}.nav__link{display:block;padding:6px 1.5rem;font-size:.9rem;font-weight:500;color:var(--fg);opacity:.85;border-radius:8px;transition:opacity var(--transition),background var(--transition)}.nav__link:hover{opacity:1;background:rgba(255,255,255,.05)}.nav__cta{display:flex;align-items:center;gap:.5rem;padding:4px 4px 4px 18px;border:1px solid rgba(246,246,253,.4);border-radius:var(--radius-pill);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);background:rgba(2,2,2,.2);font-size:.875rem;font-weight:700;color:var(--fg);white-space:nowrap;transition:transform .3s ease;height:48px;flex-shrink:0}.nav__cta:hover{transform:scale(1.05)}.nav__cta-icon{width:36px;height:36px;border-radius:50%;background:var(--fg);color:var(--bg);display:flex;align-items:center;justify-content:center;flex-shrink:0}.nav__hamburger{display:none;flex-direction:column;gap:5px;padding:4px;margin-left:auto}.nav__hamburger span{display:block;width:24px;height:2px;background:var(--fg);border-radius:2px;transition:var(--transition)}.nav__hamburger.active span:first-child{transform:translateY(7px) rotate(45deg)}.nav__hamburger.active span:last-child{transform:translateY(-7px) rotate(-45deg)}.mobile-menu{position:fixed;inset:0;background:rgba(2,2,2,.97);backdrop-filter:blur(20px);z-index:49;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s ease}.mobile-menu.open{opacity:1;pointer-events:all}.mobile-menu nav{text-align:center}.mobile-menu ul{margin-bottom:3rem}.mobile-menu li{margin-bottom:1.5rem}.mobile-menu a{font-size:2rem;font-weight:700;color:var(--fg);transition:color var(--transition)}.mobile-menu a:hover{color:var(--secondary)}.mobile-menu__cta{display:inline-block;padding:14px 36px;background:linear-gradient(135deg,var(--accent),var(--primary));border-radius:var(--radius-pill);font-size:1rem;font-weight:700}.section-title{font-size:clamp(2.5rem,5vw,4.5rem);font-weight:300;line-height:1.1;letter-spacing:-.02em}.text-accent{color:var(--secondary);font-style:italic;font-weight:700}.hero{position:relative;width:100%;min-height:100vh;overflow:hidden;display:flex;align-items:flex-end}.hero__bg-text{position:absolute;top:clamp(80px,12vw,160px);left:50%;transform:translateX(-50%);font-size:12vw;font-weight:800;white-space:nowrap;color:var(--fg);opacity:.04;pointer-events:none;z-index:1;letter-spacing:-.02em;user-select:none}.hero__light{position:absolute;top:-10%;left:-5%;width:40vw;height:70vh;background:radial-gradient(ellipse at 30% 10%,rgba(105,106,172,.5) 0%,rgba(62,63,126,.2) 40%,transparent 70%);filter:blur(60px);pointer-events:none;z-index:2}#particlesCanvas{position:absolute;top:50%;left:58%;transform:translate(-50%,-50%);width:900px;height:900px;z-index:12;pointer-events:all;cursor:grab}#particlesCanvas:active{cursor:grabbing}.hero__content{position:relative;z-index:10;width:100%;max-width:var(--max-w);margin:0 auto;padding:2rem 2rem 4rem;display:flex;flex-direction:column;justify-content:space-between;min-height:100vh}.hero__text-wrap{padding-top:max(100px,20vh);max-width:680px}.hero__badge{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:var(--radius-pill);border:1px solid rgba(162,163,233,.3);background:rgba(105,106,172,.1);font-size:.78rem;font-weight:600;color:var(--secondary);letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.5rem}.hero__badge-dot{width:6px;height:6px;border-radius:50%;background:#4ade80;animation:pulse 2s ease infinite}@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.4)}}.hero__headline{display:flex;flex-direction:column;font-size:clamp(2.2rem,5vw,4.5rem);font-weight:300;line-height:1.15;letter-spacing:-.02em;margin-bottom:1.5rem}.hero__headline em{font-style:italic;font-weight:800}.hero__subtitle{font-size:clamp(.9rem,1.5vw,1.1rem);opacity:.7;max-width:480px;line-height:1.7;margin-bottom:2.5rem}.hero__cta-group{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}.btn--hero{position:relative;overflow:hidden;padding:15px 48px;background:linear-gradient(94deg,#8587e3 -14%,#4c4dac 41%,#696aac 100%);color:#fff;border-radius:var(--radius-pill);font-size:1rem;font-weight:700;letter-spacing:.02em;box-shadow:0 4px 30px rgba(105,106,172,.45),inset 0 1px 0 rgba(255,255,255,.15);transition:transform .25s ease,box-shadow .25s ease;border:none}.btn--hero::before{content:'';position:absolute;top:-2px;left:-2px;right:-2px;bottom:-2px;border-radius:var(--radius-pill);background:linear-gradient(94deg,#a0a2f0,#6a6bc8,#a0a2f0);z-index:-1;opacity:0;transition:opacity .3s}.btn--hero::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.25) 50%,transparent 70%);transform:translateX(-100%);transition:transform .6s ease}.btn--hero:hover{transform:translateY(-3px);box-shadow:0 16px 48px rgba(105,106,172,.65),0 0 0 1px rgba(162,163,233,.4),inset 0 1px 0 rgba(255,255,255,.2)}.btn--hero:hover::before{opacity:1}.btn--hero:hover::after{transform:translateX(100%)}.btn--hero:active{transform:translateY(-1px);box-shadow:0 8px 24px rgba(105,106,172,.5)}.btn--ghost{position:relative;overflow:hidden;padding:14px 32px;border-radius:var(--radius-pill);border:1.5px solid rgba(162,163,233,.45);font-size:1rem;font-weight:600;color:var(--fg);background:rgba(105,106,172,.06);transition:background .3s,border-color .3s,transform .25s,box-shadow .3s}.btn--ghost::after{content:'';position:absolute;inset:0;border-radius:var(--radius-pill);background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(162,163,233,.15) 0%,transparent 60%);opacity:0;transition:opacity .3s}.btn--ghost:hover{background:rgba(105,106,172,.14);border-color:rgba(162,163,233,.75);transform:translateY(-2px);box-shadow:0 8px 24px rgba(105,106,172,.2),0 0 0 1px rgba(162,163,233,.2)}.btn--ghost:hover::after{opacity:1}.btn--ghost:active{transform:translateY(0)}.hero__stats{display:flex;gap:3rem;flex-wrap:wrap;padding-top:3rem;border-top:1px solid rgba(255,255,255,.07)}.hero__stat-number{font-size:clamp(2.2rem,4vw,3rem);font-weight:800;letter-spacing:-.03em;line-height:1;background:linear-gradient(135deg,var(--fg),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.hero__stat-label{font-size:.8rem;opacity:.5;font-weight:500;margin-top:4px}.whatido{padding:100px 2rem;max-width:var(--max-w);margin:0 auto}.whatido__header{margin-bottom:3.5rem}.whatido__sub{font-size:.95rem;opacity:.5;margin-top:.75rem}.whatido__list{display:flex;flex-direction:column}.whatido__row{position:relative;overflow:hidden;border-top:1px solid rgba(255,255,255,.07);transition:background .3s}.whatido__row:last-child{border-bottom:1px solid rgba(255,255,255,.07)}.whatido__row::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(105,106,172,.06) 0%,transparent 60%);opacity:0;transition:opacity .35s}.whatido__row:hover::before{opacity:1}.whatido__row-inner{display:flex;align-items:center;gap:2rem;padding:2rem .5rem;position:relative;z-index:2}.whatido__num{font-size:.8rem;opacity:.3;font-weight:700;flex-shrink:0;width:2.5rem;letter-spacing:.05em}.whatido__info{flex:1;min-width:0}.whatido__title{font-size:clamp(1.3rem,2.5vw,1.8rem);font-weight:700;line-height:1.2;margin-bottom:.4rem;transition:color .25s}.whatido__row:hover .whatido__title{color:var(--secondary)}.whatido__desc{font-size:.88rem;opacity:.55;line-height:1.6;max-width:460px}.whatido__tags{display:flex;gap:.5rem;flex-wrap:wrap;flex-shrink:0}.whatido__cta{display:inline-flex;align-items:center;gap:6px;padding:10px 22px;border-radius:var(--radius-pill);background:linear-gradient(135deg,var(--accent),var(--primary));font-size:.82rem;font-weight:700;color:#fff;white-space:nowrap;flex-shrink:0;opacity:0;transform:translateX(8px);transition:opacity .3s,transform .3s,box-shadow .3s;box-shadow:0 4px 20px rgba(105,106,172,.3);position:relative;overflow:hidden}.whatido__cta::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.2) 50%,transparent 70%);transform:translateX(-100%);transition:transform .5s ease}.whatido__row:hover .whatido__cta{opacity:1;transform:translateX(0)}.whatido__cta:hover{box-shadow:0 8px 28px rgba(105,106,172,.6)}.whatido__cta:hover::after{transform:translateX(100%)}@media (max-width:900px){.whatido__row-inner{flex-wrap:wrap;gap:1rem}.whatido__tags{display:none}.whatido__cta{opacity:1;transform:none}}.projects{padding:100px 0;max-width:var(--max-w);margin:0 auto;padding-left:2rem;padding-right:2rem}.projects__header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3rem;flex-wrap:wrap;gap:1rem}.projects__sub{font-size:.9rem;opacity:.5}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}.project-card{position:relative;border-radius:var(--radius-lg);border:1px solid var(--card-border);background:var(--card-bg);overflow:hidden;transition:border-color .3s,transform .3s;cursor:pointer;min-height:280px;display:flex;flex-direction:column}.project-card:hover{border-color:rgba(162,163,233,.35);transform:translateY(-4px)}.project-card__thumb{width:100%;height:180px;overflow:hidden;background:linear-gradient(135deg,#0d0d2a 0%,#1a1a3e 100%);display:flex;align-items:center;justify-content:center;font-size:3rem;position:relative}.project-card__thumb-glow{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(105,106,172,.2) 0%,transparent 70%)}.project-card__body{padding:1.5rem;flex:1;display:flex;flex-direction:column}.project-card__tags{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem}.project-card__title{font-size:1.1rem;font-weight:700;margin-bottom:.5rem}.project-card__desc{font-size:.85rem;opacity:.6;line-height:1.6;flex:1}.project-card__footer{display:flex;justify-content:space-between;align-items:center;margin-top:1.25rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.06)}.project-card__link{font-size:.8rem;font-weight:600;color:var(--secondary);display:flex;align-items:center;gap:4px;transition:gap .2s}.project-card:hover .project-card__link{gap:8px}.project-card--add{border-style:dashed;border-color:rgba(255,255,255,.1);background:transparent;cursor:default;align-items:center;justify-content:center}.project-card--add:hover{transform:none;border-color:rgba(162,163,233,.2)}.project-card--add .add-inner{text-align:center;opacity:.35}.project-card--add .add-icon{font-size:2rem;margin-bottom:.75rem}.project-card--add p{font-size:.85rem;font-weight:500}.tag{padding:3px 10px;border-radius:20px;border:1px solid rgba(255,255,255,.15);font-size:.7rem;font-weight:500;opacity:.7;transition:border-color .2s,opacity .2s}.project-card:hover .tag{opacity:1;border-color:rgba(255,255,255,.3)}.about{padding:80px 2rem;max-width:var(--max-w);margin:0 auto}.about__inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}.about__label{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:var(--secondary);opacity:.8;margin-bottom:1.25rem}.about__title{margin-bottom:1.5rem}.about__text{font-size:1rem;opacity:.65;line-height:1.8;margin-bottom:1rem}.about__skills{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:2rem}.skill-pill{padding:6px 14px;border-radius:var(--radius-pill);border:1px solid rgba(255,255,255,.12);font-size:.8rem;font-weight:500;opacity:.8;background:rgba(255,255,255,.03);transition:border-color .2s,opacity .2s,background .2s}.skill-pill:hover{border-color:rgba(162,163,233,.4);opacity:1;background:rgba(105,106,172,.1)}.skill-pill--highlight{border-color:rgba(255,255,255,.25);opacity:1}.skill-pill--accent{border-color:rgba(162,163,233,.4);background:rgba(105,106,172,.15);color:var(--secondary);opacity:1}.stack-categories{display:flex;flex-direction:column;gap:1.25rem;margin-top:2rem}.stack-cat__label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;opacity:.4;margin-bottom:.6rem}.stack-cat__pills{display:flex;flex-wrap:wrap;gap:.5rem}.about__metrics{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}.metric-card{padding:1.75rem;border-radius:var(--radius-lg);border:1px solid var(--card-border);background:var(--card-bg);position:relative;overflow:hidden}.metric-card__glow{position:absolute;top:-20px;right:-20px;width:80px;height:80px;border-radius:50%;background:radial-gradient(circle,rgba(105,106,172,.3) 0%,transparent 70%);filter:blur(20px)}.metric-card__num{font-size:2.5rem;font-weight:800;line-height:1;letter-spacing:-.03em;background:linear-gradient(135deg,var(--fg),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.metric-card__label{font-size:.85rem;opacity:.55;margin-top:8px;line-height:1.4}.about__bio-blocks{display:flex;flex-direction:column;gap:1.5rem;margin-bottom:2rem}.about__bio-block{}.about__bio-heading{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--secondary);opacity:.85;margin-bottom:.5rem;display:flex;align-items:center;gap:6px}.habilidades{padding:80px 2rem 100px;max-width:var(--max-w);margin:0 auto}.habilidades__top{margin-bottom:.75rem}.habilidades__quote{font-size:.95rem;opacity:.45;font-style:italic;line-height:1.7;padding-left:1.1rem;border-left:2px solid rgba(162,163,233,.4);max-width:520px;margin-bottom:3.5rem}.habilidades__cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}.hab-card{border-radius:var(--radius-lg);border:1px solid var(--card-border);background:var(--card-bg);padding:2rem;position:relative;overflow:hidden;transition:border-color .3s,transform .3s}.hab-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 0%,rgba(105,106,172,.12) 0%,transparent 60%);pointer-events:none}.hab-card--alt::before{background:radial-gradient(ellipse at 20% 100%,rgba(105,106,172,.12) 0%,transparent 60%)}.hab-card:hover{border-color:rgba(162,163,233,.3);transform:translateY(-3px)}.hab-card__header{display:flex;gap:1rem;align-items:flex-start;margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid rgba(255,255,255,.06)}.hab-card__icon{font-size:1.5rem;flex-shrink:0;margin-top:2px}.hab-card__title{font-size:1.15rem;font-weight:700;margin-bottom:.35rem}.hab-card__intro{font-size:.85rem;opacity:.5;line-height:1.6}.hab-card__items{display:flex;flex-direction:column;gap:0}.hab-card__item{display:flex;flex-direction:column;padding:.85rem 0;border-bottom:1px solid rgba(255,255,255,.05)}.hab-card__item:last-child{border-bottom:none;padding-bottom:0}.hab-card__name{font-size:.88rem;font-weight:600;margin-bottom:.2rem;transition:color .2s}.hab-card:hover .hab-card__name{color:var(--secondary)}.hab-card__desc{font-size:.8rem;opacity:.45;line-height:1.6}@media (max-width:768px){.habilidades__cards-grid{grid-template-columns:1fr}}.cta-band{padding:60px 2rem;max-width:calc(var(--max-w) + 4rem);margin:0 auto}.cta-band__card{position:relative;border-radius:var(--radius-lg);border:1px solid rgba(255,255,255,.1);overflow:hidden;min-height:360px;display:flex;align-items:center;background:rgba(10,10,20,.6)}.cta-band__glow{position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(62,63,126,.7) 0%,transparent 50%),radial-gradient(ellipse at 60% 30%,rgba(105,106,172,.4) 0%,transparent 50%);pointer-events:none}.cta-band__content{position:relative;z-index:10;padding:4rem;max-width:640px}.cta-band__headline{font-size:clamp(1.8rem,3vw,2.75rem);font-weight:300;line-height:1.3;margin-bottom:2rem}.cta-band__headline strong{font-weight:800;display:block}.cta-band__actions{display:flex;gap:1rem;flex-wrap:wrap}.btn--cta{display:inline-flex;align-items:center;gap:.75rem;padding:14px 28px;background:linear-gradient(135deg,var(--accent),var(--primary));border-radius:var(--radius-pill);font-size:1rem;font-weight:600;color:var(--fg);position:relative;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;box-shadow:0 4px 20px rgba(105,106,172,.3)}.btn--cta::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.2) 50%,transparent 70%);transform:translateX(-100%);transition:transform .5s ease}.btn--cta:hover{transform:translateX(4px);box-shadow:0 8px 32px rgba(105,106,172,.55)}.btn--cta:hover::after{transform:translateX(100%)}.btn--cta:active{transform:translateX(2px)}.footer{border-top:1px solid rgba(255,255,255,.07);background:linear-gradient(to bottom,rgba(10,10,25,0) 0%,rgba(10,10,35,.8) 100%)}.footer__inner{max-width:var(--max-w);margin:0 auto;padding:4rem 2rem 2rem;display:grid;grid-template-columns:1fr 2fr;gap:4rem}.footer__left{display:flex;flex-direction:column;gap:1.2rem}.footer__name{font-size:1rem;font-weight:700;opacity:.9}.footer__contact-link{font-size:.9rem;opacity:.6;transition:opacity var(--transition);display:flex;align-items:center;gap:6px}.footer__contact-link:hover{opacity:1}.footer__location{font-size:.8rem;opacity:.4;display:flex;gap:1rem}.footer__clock{font-size:clamp(2.5rem,5vw,4.5rem);font-weight:800;letter-spacing:-.04em;line-height:1;display:flex;align-items:baseline;gap:.5rem}.footer__ampm{font-size:1rem;font-weight:400;opacity:.5;letter-spacing:.05em}.footer__nav{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}.footer__col h4{font-size:.8rem;font-weight:600;opacity:.45;text-transform:uppercase;letter-spacing:.1em;margin-bottom:1.25rem}.footer__col ul{display:flex;flex-direction:column;gap:.65rem}.footer__col a{font-size:.875rem;opacity:.6;transition:opacity var(--transition)}.footer__col a:hover{opacity:1}.footer__copy-bar{max-width:var(--max-w);margin:0 auto;padding:1.5rem 2rem;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}.footer__copy-bar p{font-size:.8rem;opacity:.35}.footer__social{display:flex;gap:1rem}.footer__social a{font-size:.8rem;opacity:.35;transition:opacity .2s}.footer__social a:hover{opacity:.8}.fade-up{opacity:0;transform:translateY(40px);transition:opacity .7s ease,transform .7s ease}.fade-up.visible{opacity:1;transform:translateY(0)}@media (max-width:1200px){.project-grid{grid-template-columns:repeat(2,1fr)}.habilidades__cards-grid{grid-template-columns:repeat(2,1fr)}#particlesCanvas{width:680px;height:680px;left:60%}}@media (max-width:1024px){.nav__links{display:none}.nav__cta{display:none}.nav__hamburger{display:flex}#particlesCanvas{width:520px;height:520px;left:55%;top:42%}.hero__text-wrap{max-width:520px}.about__inner{grid-template-columns:1fr;gap:3rem}.habilidades__cards-grid{grid-template-columns:1fr}.sobre__grid{grid-template-columns:1fr}.footer__inner{grid-template-columns:1fr}.footer__nav{grid-template-columns:repeat(3,1fr)}}@media (max-width:768px){.hero{align-items:flex-start;min-height:100svh}.hero__content{min-height:100svh;padding:1.5rem 1.5rem 3rem}.hero__text-wrap{padding-top:max(80px,12vh);max-width:100%}.hero__headline{font-size:clamp(2rem,8vw,3.2rem)}.hero__subtitle{font-size:.95rem;max-width:100%}.hero__cta-group{flex-direction:column;align-items:flex-start;gap:.75rem}.hero__stats{gap:1.5rem}.hero__stat-number{font-size:clamp(1.6rem,6vw,2.2rem)}#particlesCanvas{width:360px;height:360px;top:62%;left:50%;transform:translate(-50%,-50%);opacity:.75}.whatido{padding:60px 1.25rem}.whatido__row-inner{flex-wrap:wrap;gap:.75rem;padding:1.5rem 0}.whatido__tags{display:none}.whatido__cta{opacity:1;transform:none;font-size:.78rem;padding:8px 16px}.whatido__title{font-size:1.25rem}.whatido__desc{font-size:.84rem}.projects{padding:60px 1.25rem}.project-grid{grid-template-columns:1fr}.projects__header{flex-direction:column;align-items:flex-start}.about{padding:60px 1.25rem}.about__inner{grid-template-columns:1fr;gap:2.5rem}.about__metrics{grid-template-columns:1fr 1fr}.habilidades{padding:60px 1.25rem 80px}.habilidades__cards-grid{grid-template-columns:1fr}.cta-band{padding:40px 1.25rem}.cta-band__content{padding:2rem 1.5rem}.cta-band__headline{font-size:clamp(1.5rem,5vw,2rem)}.cta-band__actions{flex-direction:column;gap:.75rem}.cta-band__actions a{width:100%;justify-content:center;text-align:center}.footer__inner{gap:2rem;padding:3rem 1.25rem 2rem}.footer__nav{grid-template-columns:repeat(2,1fr)}.footer__clock{font-size:2.5rem}}@media (max-width:480px){.nav__inner{padding:0 1.25rem}.hero__headline{font-size:clamp(1.75rem,9vw,2.5rem)}.hero__bg-text{font-size:20vw}.hero__stats{gap:1.25rem;flex-wrap:wrap}.hero__stat-number{font-size:1.8rem}#particlesCanvas{width:300px;height:300px;top:60%;left:50%;transform:translate(-50%,-50%);opacity:.65}.whatido{padding:50px 1rem}.projects{padding:50px 1rem}.about{padding:50px 1rem}.habilidades{padding:50px 1rem 70px}.about__metrics{grid-template-columns:1fr}.footer__nav{grid-template-columns:1fr 1fr}.footer__clock{font-size:2rem}.btn--hero{padding:13px 32px;font-size:.95rem}.btn--ghost{padding:12px 22px;font-size:.9rem}.section-title{font-size:clamp(1.8rem,8vw,2.8rem)}}</style>
+</head>
+<body>
+
+<div class="loader" id="loader">
+  <div class="loader__inner">
+    <div class="loader__logo">PORTFÓLIO</div>
+    <div class="loader__bar"><div class="loader__fill"></div></div>
+  </div>
+</div>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="nav" id="mainNav">
+  <div class="nav__inner">
+    <span class="nav__logo" aria-label="Vinícius Pereira">
+      <span class="nav__logo-text">Vinícius <span>Pereira</span></span>
+    </span>
+    <nav class="nav__links" aria-label="Navegação principal">
+      <ul class="nav__list">
+        <li><a href="#services" class="nav__link">Serviços</a></li>
+        <li><a href="#projects" class="nav__link">Projetos</a></li>
+        <li><a href="#about" class="nav__link">Sobre</a></li>
+        <li><a href="#habilidades" class="nav__link">Habilidades</a></li>
+        <li><a href="#contact" class="nav__link">Contato</a></li>
+      </ul>
+    </nav>
+    <a href="https://wa.me/5511995220104?text=Ol%C3%A1%2C%20Vin%C3%ADcius!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener" class="nav__cta">
+      <span class="nav__cta-text">Falar no WhatsApp</span>
+      <span class="nav__cta-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+    </a>
+    <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <nav>
+    <ul>
+      <li><a href="#services">Serviços</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+    <a href="https://wa.me/5511995220104?text=Ol%C3%A1%2C%20Vin%C3%ADcius!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" class="mobile-menu__cta">Falar no WhatsApp &nbsp;→</a>
+  </nav>
+</div>
+
+<main>
+  
+  <section class="hero" id="hero">
+    <div class="hero__bg-text" aria-hidden="true">VINÍCIUS PEREIRA</div>
+    <div class="hero__light" aria-hidden="true"></div>
+    <canvas id="particlesCanvas" aria-hidden="true"></canvas>
+
+    <div class="hero__content">
+      <div class="hero__text-wrap">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Disponível para novos projetos
+        </div>
+        <h1 class="hero__headline">
+          <span class="hero__line1">Sites que <em>Convertem</em></span>
+          <span class="hero__line2"><em>Código</em> que Gera</span>
+          <span class="hero__line3">Resultado Real</span>
+        </h1>
+        <p class="hero__subtitle">Desenvolvo sites, landing pages e sistemas do zero. Também cuido do tráfego pago para que cada visita vire cliente.</p>
+        <div class="hero__cta-group">
+          <a href="#projects">
+            <button class="btn--hero">Ver Projetos</button>
+          </a>
+          <a href="#contact" class="btn--ghost">Entrar em contato</a>
+        </div>
+      </div>
+
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <div class="hero__stat-number">50+</div>
+          <div class="hero__stat-label">Projetos<br>Entregues</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-number">Dev</div>
+          <div class="hero__stat-label">Sites<br>&amp; LPs</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-number">Ads</div>
+          <div class="hero__stat-label">Google &<br>Meta</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="whatido" id="services">
+    <div class="whatido__header fade-up">
+      <h2 class="section-title">O que eu <span class="text-accent">faço</span></h2>
+      <p class="whatido__sub">Do código ao clique — entrego a solução completa</p>
+    </div>
+    <div class="whatido__list">
+
+      <div class="whatido__row fade-up">
+        <div class="whatido__row-inner">
+          <span class="whatido__num">01</span>
+          <div class="whatido__info">
+            <h3 class="whatido__title">Sites & Landing Pages</h3>
+            <p class="whatido__desc">Criação de sites institucionais, portfólios e landing pages do zero. Design responsivo, código limpo e foco total em conversão.</p>
+          </div>
+          <div class="whatido__tags">
+            <span class="tag">HTML / CSS / JS</span>
+            <span class="tag">WordPress</span>
+            <span class="tag">Responsivo</span>
+          </div>
+          <a href="https://wa.me/5511995220104?text=Ol%C3%A1%2C%20Vin%C3%ADcius!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20um%20site." target="_blank" class="whatido__cta">
+            Quero um site
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="whatido__row fade-up">
+        <div class="whatido__row-inner">
+          <span class="whatido__num">02</span>
+          <div class="whatido__info">
+            <h3 class="whatido__title">Google Ads</h3>
+            <p class="whatido__desc">Gestão completa de campanhas no ecossistema Google Ads. Do Search ao YouTube, utilizo estratégias avançadas em todas as redes para garantir cobertura total, máxima conversão e o melhor ROI para o seu negócio.</p>
+          </div>
+          <div class="whatido__tags">
+            <span class="tag">Search</span>
+            <span class="tag">Performance Max</span>
+            <span class="tag">Shopping</span>
+          </div>
+          <a href="https://wa.me/5511995220104?text=Ol%C3%A1%2C%20Vin%C3%ADcius!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20gerenciar%20meu%20Google%20Ads." target="_blank" class="whatido__cta">
+            Quero campanhas
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="whatido__row fade-up">
+        <div class="whatido__row-inner">
+          <span class="whatido__num">03</span>
+          <div class="whatido__info">
+            <h3 class="whatido__title">Meta Ads</h3>
+            <p class="whatido__desc">Gestão de tráfego pago no Facebook e Instagram com foco em geração de leads e vendas. Segmentação, testes A/B e funil de remarketing.</p>
+          </div>
+          <div class="whatido__tags">
+            <span class="tag">Facebook</span>
+            <span class="tag">Instagram</span>
+          </div>
+          <a href="https://wa.me/5511995220104?text=Ol%C3%A1%2C%20Vin%C3%ADcius!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20gerenciar%20meu%20Meta%20Ads." target="_blank" class="whatido__cta">
+            Quero campanhas
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <section class="projects" id="projects">
+    <div class="projects__header fade-up">
+      <div>
+        <h2 class="section-title">Sites <span class="text-accent">Desenvolvidos</span></h2>
+        <p class="projects__sub" style="margin-top:0.6rem;">Projetos reais — todos com links ao vivo</p>
+      </div>
+      <a href="https://github.com/ViniPereiraF" target="_blank" rel="noopener" class="btn--ghost" style="padding:10px 22px;font-size:0.875rem;">Ver GitHub ↗</a>
+    </div>
+
+    <div class="project-grid">
+
+      
+      <div class="project-card fade-up">
+        <div class="project-card__thumb" style="background:#0a0a0a;padding:0;overflow:hidden;">
+          <img
+            src="img/recanto-joaninha.png"
+            alt="Área de Eventos Completa — Recanto Joaninha"
+            style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block;"
+          />
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__tags">
+            <span class="tag">Site Institucional</span>
+            <span class="tag">HTML / CSS / JS</span>
+            <span class="tag">Galeria</span>
+          </div>
+          <h3 class="project-card__title">Área de Eventos Completa</h3>
+          <p class="project-card__desc">Site para sítio de lazer com galeria de fotos interativa por ambiente — piscina, varanda, salão, churrasqueira e mais. Design responsivo e navegação fluida.</p>
+          <div class="project-card__footer">
+            <span style="font-size:0.78rem;opacity:0.45;">HTML · CSS · JS</span>
+            <a href="https://vinipereiraf.github.io/recanto-joaninha/site_sitio_final%20sfd/site_final_novo/" target="_blank" rel="noopener" class="project-card__link">Ver site ↗</a>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="project-card fade-up">
+        <div class="project-card__thumb" style="padding:0;">
+          <img
+            src="img/clinica-odontologica.png"
+            alt="Clínica Odontológica"
+            style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block;"
+          />
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__tags">
+            <span class="tag">Site Institucional</span>
+            <span class="tag">HTML / CSS / JS</span>
+          </div>
+          <h3 class="project-card__title">Clínica Odontológica</h3>
+          <p class="project-card__desc">Site institucional completo para clínica odontológica, com páginas de tratamentos, galeria e integração com WhatsApp para agendamento.</p>
+          <div class="project-card__footer">
+            <span style="font-size:0.78rem;opacity:0.45;">HTML · CSS · JS</span>
+            <a href="https://vinipereiraf.github.io/Site-Base-/" target="_blank" rel="noopener" class="project-card__link">Ver site ↗</a>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="project-card fade-up">
+        <div class="project-card__thumb" style="padding:0;">
+          <img
+            src="img/mundo-odonto.png"
+            alt="Mundo Odonto"
+            style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block;"
+          />
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__tags">
+            <span class="tag">Site Odontológico</span>
+            <span class="tag">Multi-página</span>
+          </div>
+          <h3 class="project-card__title">Mundo Odonto</h3>
+          <p class="project-card__desc">Site completo para clínica odontológica com múltiplas páginas de tratamentos — clareamento, implantes, ortodontia, harmonização facial e mais.</p>
+          <div class="project-card__footer">
+            <span style="font-size:0.78rem;opacity:0.45;">HTML · CSS · JS</span>
+            <a href="https://vinipereiraf.github.io/Mundo-Odonto/" target="_blank" rel="noopener" class="project-card__link">Ver site ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <section class="about" id="about">
+    <div class="about__inner">
+      <div class="fade-up">
+        <p class="about__label">Sobre mim</p>
+        <h2 class="section-title about__title">Dev que <span class="text-accent">Entende</span> Negócio</h2>
+
+        <p class="about__text">Desenvolvedor com foco em performance e resultados. Iniciei minha trajetória aos 17 anos, unindo o desenvolvimento web à experiência prática no tráfego pago em agências de marketing. Acredito que o código deve ser, acima de tudo, uma <strong>ferramenta estratégica para impulsionar vendas</strong> e otimizar negócios. Atualmente, foco em criar interfaces robustas com frameworks modernos de JavaScript, sempre com o olhar voltado para a <strong>eficiência técnica e o sucesso do cliente</strong>.</p>
+
+        
+        <div class="stack-categories">
+          <div class="stack-cat">
+            <h4 class="stack-cat__label">Frontend Development</h4>
+            <div class="stack-cat__pills">
+              <span class="skill-pill skill-pill--highlight">HTML5 &amp; CSS3</span>
+              <span class="skill-pill skill-pill--highlight">JavaScript ES6+</span>
+              <span class="skill-pill">WordPress</span>
+              <span class="skill-pill">Performance Web</span>
+            </div>
+          </div>
+          <div class="stack-cat">
+            <h4 class="stack-cat__label">Marketing Tech &amp; Ads</h4>
+            <div class="stack-cat__pills">
+              <span class="skill-pill skill-pill--accent">Google Ads</span>
+              <span class="skill-pill skill-pill--accent">Meta Ads</span>
+              <span class="skill-pill">Tag Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__metrics fade-up">
+        <div class="metric-card">
+          <div class="metric-card__glow"></div>
+          <div class="metric-card__num">50+</div>
+          <div class="metric-card__label">Projetos entregues<br>sites, sistemas e campanhas</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-card__glow"></div>
+          <div class="metric-card__num">Front</div>
+          <div class="metric-card__label">Foco principal<br>interfaces &amp; UX</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-card__glow"></div>
+          <div class="metric-card__num">Ads</div>
+          <div class="metric-card__label">Tráfego pago<br>Google &amp; Meta</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-card__glow"></div>
+          <div class="metric-card__num">1x</div>
+          <div class="metric-card__label">Uma pessoa resolve<br>dev + tráfego</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="habilidades" id="habilidades">
+    <div class="habilidades__top fade-up">
+      <div>
+        <h2 class="section-title">Minhas <span class="text-accent">Habilidades</span> Técnicas</h2>
+        <p class="habilidades__quote">"Foco total na criação de interfaces de alta performance e arquitetura de dados para conversão."</p>
+      </div>
+    </div>
+
+    <div class="habilidades__cards-grid fade-up">
+
+      
+      <div class="hab-card">
+        <div class="hab-card__header">
+          <span class="hab-card__icon">💻</span>
+          <div>
+            <h3 class="hab-card__title">Desenvolvimento Frontend</h3>
+            <p class="hab-card__intro">Transformo designs em código limpo, rápido e focado na melhor experiência do usuário final.</p>
+          </div>
+        </div>
+        <div class="hab-card__items">
+          <div class="hab-card__item">
+            <span class="hab-card__name">HTML5 &amp; CSS3</span>
+            <span class="hab-card__desc">Layouts modernos, responsividade total e animações que dão vida ao projeto.</span>
+          </div>
+          <div class="hab-card__item">
+            <span class="hab-card__name">JavaScript ES6+</span>
+            <span class="hab-card__desc">Funcionalidades dinâmicas e interativas para tornar o site uma ferramenta de vendas.</span>
+          </div>
+          <div class="hab-card__item">
+            <span class="hab-card__name">WordPress</span>
+            <span class="hab-card__desc">Landing Pages estruturadas para suportar grandes volumes de tráfego.</span>
+          </div>
+          <div class="hab-card__item">
+            <span class="hab-card__name">Performance Web</span>
+            <span class="hab-card__desc">Otimização técnica (Core Web Vitals) para carregamento instantâneo.</span>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="hab-card hab-card--alt">
+        <div class="hab-card__header">
+          <span class="hab-card__icon">📈</span>
+          <div>
+            <h3 class="hab-card__title">Marketing Tech &amp; Ads</h3>
+            <p class="hab-card__intro">Projeto sites pensando no rastreamento e no ROI — diferente de um dev comum.</p>
+          </div>
+        </div>
+        <div class="hab-card__items">
+          <div class="hab-card__item">
+            <span class="hab-card__name">Google &amp; Meta Ads</span>
+            <span class="hab-card__desc">Gestão estratégica de tráfego pago focada em resultados reais.</span>
+          </div>
+          <div class="hab-card__item">
+            <span class="hab-card__name">Google Tag Manager</span>
+            <span class="hab-card__desc">Rastreamento via código sem comprometer a velocidade do site.</span>
+          </div>
+          <div class="hab-card__item">
+            <span class="hab-card__name">Foco em Conversão</span>
+            <span class="hab-card__desc">Layouts pensados para guiar o usuário até a ação desejada: compra ou lead.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <section class="cta-band" id="contact">
+    <div class="cta-band__card">
+      <div class="cta-band__glow"></div>
+      <div class="cta-band__content">
+        <h2 class="cta-band__headline">Precisa de um site<br><strong>que realmente funcione?</strong></h2>
+        <div class="cta-band__actions">
+          <a href="https://wa.me/5511995220104?text=Ol%C3%A1%2C%20Vin%C3%ADcius!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener" class="btn btn--cta">
+            <span>Falar no WhatsApp</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/vin%C3%ADciuspereira/" target="_blank" rel="noopener" class="btn--ghost" style="padding:14px 24px;font-size:1rem;display:inline-flex;align-items:center;gap:6px;">
+            LinkedIn ↗
+          </a>
+          <a href="https://www.instagram.com/vini.pereiraf/" target="_blank" rel="noopener" class="btn--ghost" style="padding:14px 24px;font-size:1rem;display:inline-flex;align-items:center;gap:6px;">
+            Instagram ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__left">
+      <span class="footer__name">Vinícius Pereira</span>
+      <a href="https://wa.me/5511995220104?text=Ol%C3%A1%2C%20Vin%C3%ADcius!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener" class="footer__contact-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        (11) 99522-0104
+      </a>
+      <a href="mailto:vipereira.vv@gmail.com" class="footer__contact-link">
+        ✉ vipereira.vv@gmail.com
+      </a>
+      <a href="https://www.linkedin.com/in/vin%C3%ADciuspereira/" target="_blank" rel="noopener" class="footer__contact-link">
+        LinkedIn ↗
+      </a>
+      <a href="https://www.instagram.com/vini.pereiraf/" target="_blank" rel="noopener" class="footer__contact-link">
+        @vini.pereiraf ↗
+      </a>
+      <div class="footer__location">
+        <span>São Paulo, SP — Brasil</span>
+      </div>
+      <div class="footer__clock">
+        <span id="clockTime">00:00:00</span> <span class="footer__ampm" id="clockAmPm">AM</span>
+      </div>
+    </div>
+    <div class="footer__nav">
+      <div class="footer__col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#services">Sites & Landing Pages</a></li>
+          <li><a href="#services">Google Ads</a></li>
+          <li><a href="#services">Meta Ads</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Projetos</h4>
+        <ul>
+          <li><a href="#projects">Sites</a></li>
+          <li><a href="#projects">Landing Pages</a></li>
+          <li><a href="https://github.com/ViniPereiraF" target="_blank">GitHub ↗</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5511995220104?text=Ol%C3%A1%2C%20Vin%C3%ADcius!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank">WhatsApp</a></li>
+          <li><a href="mailto:vipereira.vv@gmail.com">E-mail</a></li>
+          <li><a href="https://www.linkedin.com/in/vin%C3%ADciuspereira/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/vini.pereiraf/" target="_blank">Instagram</a></li>
+          <li><a href="https://github.com/ViniPereiraF" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__copy-bar">
+    <p>Vinícius Pereira Fernandes Dos Santos &copy; 2026. Todos os direitos reservados.</p>
+    <div class="footer__social">
+      <a href="https://github.com/ViniPereiraF" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/vin%C3%ADciuspereira/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/vini.pereiraf/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<script>function initLoader() {
+const loader = document.getElementById('loader');
+if (!loader) return;
+setTimeout(() => {
+loader.classList.add('hidden');
+document.body.style.overflow = '';
+}, 2000);
+document.body.style.overflow = 'hidden';
+}
+function initScrollProgress() {
+const bar = document.getElementById('scrollProgress');
+if (!bar) return;
+window.addEventListener('scroll', () => {
+const scrollTop = window.scrollY;
+const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+bar.style.width = pct + '%';
+}, { passive: true });
+}
+function initNav() {
+const nav = document.getElementById('mainNav');
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+if (!nav) return;
+window.addEventListener('scroll', () => {
+nav.classList.toggle('scrolled', window.scrollY > 20);
+}, { passive: true });
+if (hamburger && mobileMenu) {
+hamburger.addEventListener('click', () => {
+const open = hamburger.classList.toggle('active');
+mobileMenu.classList.toggle('open', open);
+hamburger.setAttribute('aria-expanded', open);
+mobileMenu.setAttribute('aria-hidden', !open);
+document.body.style.overflow = open ? 'hidden' : '';
+});
+mobileMenu.querySelectorAll('a').forEach(link => {
+link.addEventListener('click', () => {
+hamburger.classList.remove('active');
+mobileMenu.classList.remove('open');
+hamburger.setAttribute('aria-expanded', false);
+mobileMenu.setAttribute('aria-hidden', true);
+document.body.style.overflow = '';
+});
+});
+}
+}
+function initParticles() {
+const canvas = document.getElementById('particlesCanvas');
+if (!canvas) return;
+const ctx = canvas.getContext('2d');
+const SIZE = 900;
+canvas.width = SIZE;
+canvas.height = SIZE;
+let W = SIZE, H = SIZE;
+const NUM = 1700;
+const RADIUS = SIZE * 0.40;
+const particles = Array.from({ length: NUM }, () => {
+const phi = Math.acos(1 - 2 * Math.random());
+const theta = Math.PI * 2 * Math.random();
+const disp = 1 + (Math.random() < 0.15 ? Math.random() * 0.25 : 0);
+return {
+ox: Math.sin(phi) * Math.cos(theta) * RADIUS * disp,
+oy: Math.sin(phi) * Math.sin(theta) * RADIUS * disp,
+oz: Math.cos(phi) * RADIUS * disp,
+size: Math.random() * 1.8 + 0.3,
+brightness: Math.random() * 0.6 + 0.4,
+ts: Math.random() * 0.03 + 0.005,
+to: Math.random() * Math.PI * 2,
+time: 0
+};
+});
+let rotY = 0, rotX = 0;
+let autoY = 0, autoX = 0.0015;
+function rot3(x, y, z, rx, ry) {
+const cy = Math.cos(ry), sy = Math.sin(ry);
+const x1 = x*cy + z*sy, z1 = -x*sy + z*cy;
+const cx = Math.cos(rx), sx = Math.sin(rx);
+return { x: x1, y: y*cx - z1*sx, z: y*sx + z1*cx };
+}
+function project(x, y, z) {
+const fov = 900, zOff = 800;
+const s = fov / (fov + z + zOff);
+return { x: W/2 + x*s, y: H/2 + y*s, s };
+}
+function drawGlow(px, py, sz, a) {
+const g = ctx.createRadialGradient(px, py, 0, px, py, sz * 6);
+g.addColorStop(0, `rgba(255,255,255,${a})`);
+g.addColorStop(0.3, `rgba(180,200,255,${a * 0.5})`);
+g.addColorStop(0.7, `rgba(100,140,255,${a * 0.15})`);
+g.addColorStop(1, 'rgba(0,0,0,0)');
+ctx.beginPath();
+ctx.arc(px, py, sz * 6, 0, Math.PI * 2);
+ctx.fillStyle = g;
+ctx.fill();
+}
+function draw() {
+requestAnimationFrame(draw);
+ctx.clearRect(0, 0, W, H);
+const outerGlow = ctx.createRadialGradient(W/2, H/2, 0, W/2, H/2, RADIUS * 1.35);
+outerGlow.addColorStop(0, 'rgba(15, 25, 80, 0.55)');
+outerGlow.addColorStop(0.4, 'rgba(10, 18, 60, 0.40)');
+outerGlow.addColorStop(0.75,'rgba(8, 12, 40, 0.20)');
+outerGlow.addColorStop(1, 'rgba(0, 0, 0, 0)');
+ctx.beginPath();
+ctx.arc(W/2, H/2, RADIUS * 1.35, 0, Math.PI * 2);
+ctx.fillStyle = outerGlow;
+ctx.fill();
+const cg = ctx.createRadialGradient(W/2, H/2, 0, W/2, H/2, RADIUS * 0.8);
+cg.addColorStop(0, 'rgba(40, 60, 180, 0.18)');
+cg.addColorStop(0.4, 'rgba(25, 45, 140, 0.12)');
+cg.addColorStop(0.8, 'rgba(12, 20, 80, 0.06)');
+cg.addColorStop(1, 'rgba(0, 0, 0, 0)');
+ctx.beginPath();
+ctx.arc(W/2, H/2, RADIUS * 0.8, 0, Math.PI * 2);
+ctx.fillStyle = cg;
+ctx.fill();
+autoY += 0.003;
+autoX += 0.0005;
+const rX = autoX + rotX;
+const rY = autoY + rotY;
+const data = particles.map(p => {
+const r = rot3(p.ox, p.oy, p.oz, rX, rY);
+const pj = project(r.x, r.y, r.z);
+p.time += p.ts;
+const tw = (Math.sin(p.time + p.to) + 1) / 2;
+return { pj, p, tw, z: r.z };
+}).sort((a, b) => a.z - b.z);
+data.forEach(({ pj, p, tw }) => {
+const a = (0.4 + tw * 0.6) * p.brightness * pj.s;
+const sz = p.size * pj.s * (0.7 + tw * 0.3);
+drawGlow(pj.x, pj.y, sz, a * 0.35);
+ctx.beginPath();
+ctx.arc(pj.x, pj.y, sz, 0, Math.PI * 2);
+ctx.fillStyle = `rgba(255,255,255,${Math.min(a, 1)})`;
+ctx.fill();
+ctx.beginPath();
+ctx.arc(pj.x, pj.y, sz * 0.4, 0, Math.PI * 2);
+ctx.fillStyle = `rgba(255,255,255,${Math.min(a * 1.5, 1)})`;
+ctx.fill();
+});
+}
+let down = false, lx = 0, ly = 0;
+canvas.addEventListener('mousedown', e => {
+down = true; lx = e.clientX; ly = e.clientY;
+e.preventDefault();
+});
+window.addEventListener('mouseup', () => { down = false; });
+window.addEventListener('mousemove', e => {
+if (!down) return;
+rotY += (e.clientX - lx) * 0.005;
+rotX += (e.clientY - ly) * 0.005;
+lx = e.clientX; ly = e.clientY;
+});
+canvas.addEventListener('touchstart', e => {
+down = true;
+lx = e.touches[0].clientX; ly = e.touches[0].clientY;
+});
+window.addEventListener('touchend', () => { down = false; });
+window.addEventListener('touchmove', e => {
+if (!down) return;
+rotY += (e.touches[0].clientX - lx) * 0.005;
+rotX += (e.touches[0].clientY - ly) * 0.005;
+lx = e.touches[0].clientX; ly = e.touches[0].clientY;
+});
+draw();
+}
+function initScrollAnimations() {
+const fades = document.querySelectorAll('.fade-up');
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(e => {
+if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+});
+}, { threshold: 0.1 });
+fades.forEach(el => observer.observe(el));
+}
+function initClock() {
+const timeEl = document.getElementById('clockTime');
+const ampmEl = document.getElementById('clockAmPm');
+if (!timeEl) return;
+function update() {
+const now = new Date();
+const spTime = new Date(now.toLocaleString("en-US", {timeZone: "America/Sao_Paulo"}));
+let h = spTime.getHours();
+const m = String(spTime.getMinutes()).padStart(2, '0');
+const s = String(spTime.getSeconds()).padStart(2, '0');
+const ampm = h >= 12 ? 'PM' : 'AM';
+h = h % 12 || 12;
+timeEl.textContent = `${String(h).padStart(2,'0')}:${m}:${s}`;
+if (ampmEl) ampmEl.textContent = ampm;
+}
+update();
+setInterval(update, 1000);
+}
+function initHeroParallax() {
+const bgText = document.querySelector('.hero__bg-text');
+const heroLight = document.querySelector('.hero__light');
+if (!bgText && !heroLight) return;
+window.addEventListener('scroll', () => {
+const scrollY = window.scrollY;
+if (bgText) bgText.style.transform = `translateX(-50%) translateY(${scrollY * 0.3}px)`;
+if (heroLight) heroLight.style.transform = `translateY(${scrollY * 0.15}px)`;
+}, { passive: true });
+}
+function initSmoothScroll() {
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+a.addEventListener('click', (e) => {
+const target = document.querySelector(a.getAttribute('href'));
+if (target) {
+e.preventDefault();
+target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+});
+});
+}
+document.addEventListener('DOMContentLoaded', () => {
+initLoader();
+initScrollProgress();
+initNav();
+initParticles();
+initClock();
+initHeroParallax();
+initSmoothScroll();
+initScrollAnimations();
+});</script>
+
+</body>
+</html>
